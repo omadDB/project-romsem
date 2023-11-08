@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-contacts d-flex align-items-center">
+        <a href="#!" class="navbar-contacts__logo">
+          <img src="images/logo.png" alt="">
+        </a>
+        <a href="#menu" data-bs-toggle="offcanvas" class="navbar-contacts__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="navbar-contacts__working-time d-flex flex-md-column flex-row align-items-center">
+          <div class="contacts d-flex flex-column align-items-center">
+            <h3>Наш телефон</h3>
+            <a href="#!" class="phone">+996 705 188 955</a>
+            <a href="#!" class="phone">+996 555 188 955</a>
+          </div>
+          <p class="time icon-clock d-flex flex-md-row flex-column">
+            <span>работаем</span>
+            <span>с 10:00 до 00:00</span>
+          </p>
+        </div>
+        <div class="navbar-contacts__city">
+          <p>Город:</p>
+          <h3>Бишкек</h3>
+        </div>
+      </div>
+      <div class="navbar-list d-flex align-items-center">
+        <ul class="navbar-list__ul navbar-nav flex-row">
+          <li><a href="#!">Отзывы</a></li>
+          <li><a href="#!">Доставка и оплата</a></li>
+        </ul>
+        <a href="#cart" data-bs-toggle="offcanvas" class="icon-cart"></a>
+        <a href="#!"  class="icon-search"></a>
+      </div>
+    </div>
+    <!-- left menu -->
+    <div class="offcanvas offcanvas-start menu" id="menu">
+      <div class="offcanvas-header d-flex flex-column align-items-center">
+        <button type="button" class="btn-close align-self-end" data-bs-dismiss="offcanvas"></button>
+        <a href="#!" class="menu__logo">
+          <img src="images/logo.png" alt="">
+          <span>Romsem</span>
+        </a>
+      </div>
+      <div class="offcanvas-body d-flex justify-content-center">
+        <ul class="menu__list navbar-nav">
+          <li><a href="#!" class=""><img src="images/icon-menu/item1.svg" alt=""><span>Пицца</span></a></li>
+          <li><a href="#!" class=""><img src="images/icon-menu/item2.svg" alt=""><span>Сеты</span></a></li>
+          <li><a href="#!" class=""><img src="images/icon-menu/item3.svg" alt=""><span>WOK</span></a></li>
+          <li><a href="#!" class=""><img src="images/icon-menu/item4.svg" alt=""><span>Роллы</span></a></li>
+          <li><a href="#!" class=""><img src="images/icon-menu/item5.svg" alt=""><span>Суши</span></a></li>
+          <li><a href="#!" class="soon"><img src="images/icon-menu/item6.svg" alt=""><span>Салаты</span></a></li>
+          <li><a href="#!" class="soon"><img src="images/icon-menu/item7.svg" alt=""><span>Супы</span></a></li>
+          <li><a href="#!" class=""><img src="images/icon-menu/item8.svg" alt=""><span>Корн доги</span></a></li>
+          <li><a href="#!" class=""><img src="images/icon-menu/item9.svg" alt=""><span>Напитки</span></a></li>
+          <li><a href="#!" class=""><img src="images/icon-menu/item10.svg" alt=""><span>Акции</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- cart menu -->
+    <div class="offcanvas offcanvas-end" id="cart">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body cart">
+        <div class="cart-products">
+          <h3 class="cart-product__title">Ваша корзина пуста.</h3>
+          <a href="#!" class="cart-product__add">Добавьте же скорее что-нибудь!</a>
+          <p class="cart-product__text">Бесплатная доставка от 800 СОМ</p>
+        </div>
+        <div class="cart-location">
+          <div class="cart-location__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.995494078902!2d69.20155431573785!3d41.265434011508766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe796b3acf806fd5a!2zNDHCsDE1JzU1LjYiTiA2OcKwMTInMTMuNSJF!5e0!3m2!1sru!2s!4v1638078745060!5m2!1sru!2s" loading="lazy"></iframe>
+          </div>
+          <span class="icon-marker"></span>
+          <h3 class="cart-location__title">Укажите адрес</h3>
+          <a href="" class="cart-location__time">И узнайте время доставки</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar-bottom fixed-bottom w-100">
+    <div class="container">
+      <ul class="navbar-bottom__list navbar-nav flex-row justify-content-center">
+        <li><a href="#menu" data-bs-toggle="offcanvas">
+          <img src="images/icon-menu-bottom/icon1.svg" alt=""><span>Меню</span>
+        </a></li>
+        <li><a href="#cart" data-bs-toggle="offcanvas">
+          <img src="images/icon-menu-bottom/icon2.svg" alt=""><span>Корзина</span>
+        </a></li>
+        <li><a href="#!">
+          <img src="images/icon-menu-bottom/icon3.svg" alt=""><span>Отзывы</span>
+        </a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  
+  <!-- single pagination -->
+  <section class="single-pagination container">
+    <div class="row">
+      <div class="col-6">
+        <a href="#!" class="single-pagination__link d-flex align-items-center justify-content-start  icon-arr-left">Назад</a>
+      </div>
+      <div class="col-6">
+        <a href="#!" class="single-pagination__link d-flex align-items-center justify-content-start flex-row-reverse icon-arr-right">Вперед</a>
+      </div>
+    </div>
+  </section>
+  <!-- single pagination end -->
+  
+  <!-- single -->
+  <section class="single">
+    <div class="container single-content">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/sets/Rectangle1.png" alt="" class="single-img">
+        </div>
+        <div class="col-md-6 d-flex flex-md-column flex-row flex-wrap justify-content-between align-items-md-start align-items-center">
+          <div class="single-text">
+            <h2>Филадельфия и лосось сет</h2>
+            <span>290 грамм</span>
+          </div>
+          <div class="single-price d-flex align-items-center">
+            <span class="single-price__num">1150 СОМ</span>
+            <div class="single-price__amount d-md-flex d-none align-items-center">
+              <span class="single-price__amount--symbol">-</span>
+              <span class="single-price__amount--number">10</span>
+              <span class="single-price__amount--symbol">+</span>
+            </div>
+          </div>
+          <div class="single-info d-md-block d-none">
+            <h5>Состав</h5>
+            <p>Лосось, сыр "Филадельфия", огурец, авокадо</p>
+          </div>
+          <a href="#!" class="single-btn">Хочу!</a>
+        </div>
+        <div class="col-12 d-sm-none d-block">
+          <h4>Состав сета</h4>
+          <div id="single-slider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-4">
+                    <div class="single-card d-flex flex-column align-items-center">
+                      <img src="images/sets/Rectangle1.png" alt="">
+                      <h5>Филадельфия</h5>
+                      <p>140 СОМ</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="single-card d-flex flex-column align-items-center">
+                      <img src="images/sets/Rectangle1.png" alt="">
+                      <h5>Филадельфия</h5>
+                      <p>140 СОМ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev icon-arr-left" href="#single-slider"  data-bs-slide="prev"></a>
+            <a class="carousel-control-next icon-arr-right" href="#single-slider"  data-bs-slide="next"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- single end -->
+  
+  <!-- single recomendation -->
+  <section class="single-recomendation container d-md-block d-none">
+    <h4>Состав сета</h4>
+    <div id="single-recomendation" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-4">
+              <div class="single-recomendation__card d-flex flex-column align-items-center">
+                <img src="images/sets/Rectangle1.png" alt="">
+                <h5>Филадельфия</h5>
+                <div class="single-recomendation__card--price d-flex align-items-center">
+                  <span>170 СОМ</span>
+                  <a href="#!">+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev icon-arr-left" href="#single-recomendation"  data-bs-slide="prev"></a>
+      <a class="carousel-control-next icon-arr-right" href="#single-recomendation"  data-bs-slide="next"></a>
+    </div>
+  </section>
+  <!-- single recomendation end -->
+  
+  <!-- content  -->
+  <section class="content container d-md-none d-flex flex-column align-items-center">
+    <div class="content__text">
+      <h3>Заказать суши в Бишкеке</h3>
+      <p>Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом, приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете заказать суши в Харькове с доставкой на дом или в офис.</p>
+      <p>В нашем меню более 20 видов суши:</p>
+      <ul>
+        <li>Классические с сырым лососем, тунцом, окунем.</li>
+        <li>Экзотические с тигровой креветкой, морским гребешком.</li>
+        <li>Пикантные с копченым лососем, угрем.</li>
+      </ul>
+      <p>В меню также представлены гунканы: с начинкой из красной икры и тобико, а также феликсы, где японский майонез сочетается с рыбой, морепродуктами, угрем. Любители острых блюд могут купить суши с соусом спайси. Популярные начинки — копченая курица, снежный краб, креветки, гребешки, тунец, лосось и окунь.</p>
+    </div>
+    <a href="#!" class="content__read-more icon-arr-down d-flex flex-row-reverse">Подробнее</a>
+  </section>
+  <!-- content end -->
+  
+  <!-- footer -->
+  <footer class="footer container">
+    <div class="row">
+      <div class="col-md-4 footer-box d-md-flex d-none">
+        <ul class="footer-box__list navbar-nav">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Лента материалов</a></li>
+          <li><a href="#">Политика возврата</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 footer-box">
+        <div class="footer-box__text d-flex flex-column">
+          <h3 class="d-md-flex d-none">Введите номер</h3>
+          <span class="d-md-flex d-none">+996 (__) ___ __ __</span>
+          <p>Выберите удобный мессенджер для общения</p>
+          <ul class="footer-box__text--social navbar-nav flex-row justify-content-between">
+            <li><a href="#!" class="icon-whatsapp"></a></li>
+            <li><a href="#!" class="icon-telegram"></a></li>
+            <li><a href="#!" class="icon-instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 footer-box d-flex flex-column align-items-center align-items-md-start">
+        <a href="#!" class="footer-box__phone">Тел:<span>+996 705 188 955</span></a>
+        <a href="#!" class="footer-box__phone">Тел:<span>+996 555 188 955</span></a>
+        <p class="footer-box__address">Адрес:Бакаева 126</p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
